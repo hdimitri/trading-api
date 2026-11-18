@@ -1,0 +1,17 @@
+# Gradle
+.gradle/
+build/
+.gradle/buildOutputCleanup/
+.gradle/file-system.probe
+
+# IDEs y Editores
+.idea/
+*.iml
+.vscode/
+
+# Sistema Operativo / Temporales
+.DS_Store
+Thumbs.db
+
+# Configuración y Secretos
+.env

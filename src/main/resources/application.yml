@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USER}
+    password: ${DB_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 5
+      connection-timeout: 20000
+  jpa:
+    open-in-view: false
+    show-sql: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    root: INFO
+    ar.com.cocos: DEBUG
+    org.springframework: INFO
+
+server:
+  # la collection Postman en docs/trading-api.postman_collection.json se configuro 
+  # para que apunte directamente al puerto 8080 sin necesidad de definir variables en Postman
+  port: 8080
